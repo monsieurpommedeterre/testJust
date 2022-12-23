@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* css rules ---> font-family: 'Raleway', sans-serif; */
+* {
+    box-sizing: border-box;
+    list-style: none; 
+}
+
+#main-wrapper {
+    font-family: 'Raleway', sans-serif; 
+    max-width: 1400px;
+    margin: auto;
+}
+
+header, main, footer {
+    width: 95%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+h1, h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+p {
+    line-height: 16.44px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 126px;
+}
+
+.logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+.navig {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navig li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-top: 2px solid transparent;
+    margin-right: 67px;
+}
+.navig li:hover {
+    border-top: 2px solid #0065FC;
+}
+
+.navig li:hover a {
+    color: #0065FC;
+}
+/* BARRE RECHERCHE */
+.formulaire {
+    display: flex;
+    height: 59px;
+    margin-top: 20px;
+}
+
+.fa-location-dot {
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 100%;
+    font-size: 18px;                 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.lignerecherche {
+    height: 100%;
+    border: 1px solid #F2F2F2;  
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: start;
+    padding-left: 16px;
+    width: 270px;
+}
+.rechercher {
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px; 
+    font-weight: 700;                   /* -----> paramètres communs aux 2 boutons */
+    font-size: 18px;
+    height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.bouton {
+    width:132px;
+    font-family: 'Raleway'; 
+}
+.bouton-xs {
+    width: 49px;
+    visibility: hidden;
+}
+/* FILTRES */
+.lignefiltres {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.lignefiltres h3 {
+    margin-right: 25px;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+}
+
+.filtres1, .filtres2 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.boutonsfiltres {
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    font-size: 17px;
+    padding: 15px 20px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+    font-size: 20px;
+    color: #0065FC;
+    padding-right: 14px;
+    vertical-align:baseline;
+}
+
+.boutonsfiltres:hover {
+    background-color: #DEEBFF;
+}
+/* INFO */
+.info {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 20px;
+}
+
+.fa-info {    
+   color: #0065FC;
+   border: 1px solid #D9D9D9;
+   border-radius: 50%; 
+   width: 24px;
+   height: 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.info p {
+    font-size: 16px;
+    font-weight: 400;
+}
+/* CARDS HEBERGEMENTS */
+.hebergements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 626px;
+    margin-top: 39px;
+}
+
+.hebergements h2 {
+    padding-left: 20px;
+}
+
+.boxgrises {
+    display: flex;
+    flex-direction: column;
+    min-height: 626px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.marseille {
+    width: 67%;
+}
+
+.popu {
+    width: 31%;
+}
+
+.titrepopu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deuxlignes {
+    display: flex;
+    flex-direction: column;
+}
+
+.lignes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;   
+}
+
+.cardmarseille {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.443);
+    border-radius: 20px;
+    width: 30%;
+    min-height: 199px;
+}
+
+.cardmarseille img {
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 21px 21px 0 0;
+    height: 124px; 
+    width: 100%;
+}
+
+.txtCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px 0 11px 16px;
+}
+
+.txtCard h3, .txtPopu h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 18.78px;
+}
+
+.txtCard p, .txtPopu p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 0;
+}
+
+.Plus {
+    padding: 40px 0 46px 0;
+}
+
+.Plus a {
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 40px;
+    color: black;
+}
+
+.lesCardspopu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.lesCardspopu .cardpopu {
+    display: flex;
+    justify-content: center;
+    min-height: 29%;
+}
+
+.cardpopu article {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.075);
+    border-radius: 20px;
+    width: 90%;
+}
+
+.cardpopu img {
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 18px 0 0 18px;
+    height: 165px;
+    width: 40%;
+}
+
+.txtPopu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 52%;
+    padding: 20px 0 11px 15px;
+
+}
+
+.fa-chart-line {
+    font-size: 18px;
+    color: #0065FC;
+    padding-right: 30px;
+}
+
+.fa-star {
+    font-size: 12px;
+    color: #0065FC;
+}
+
+.fa-star:last-child {
+    color: #F2F2F2;
+}
+/* ACTIVITES */
+.activites {
+    margin: 60px 0;
+    width: 100%;
+}
+.boxActiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activ {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.443);
+    border-radius: 20px;
+    height: 444.51px;
+    width: 23%;
+}
+
+.activ img {
+    width: 100%;
+    height: 389px; 
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.activ h3 {
+    padding-left: 20px;
+}
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: row;
+    min-height: 225px;
+    background-color: #F2F2F2;
+}
+
+.footer article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding-left: 0;
+    margin: 45px 130px 58px 70px;
+    min-width: 200px;
+}
+
+.footer article a p {
+    font-size: 14px;
+    font-weight: 400;
+}
+/* RESPONSIVE DESIGN Tablette */
+@media screen and (min-width:767px) and (max-width:992px) {
+    header, main, footer {
+        width: 85%;
+    }   
+    /* FILTRES Tablette */    
+    .lignefiltres h3 {
+        margin-right: 22px;
+    }
+    .filtres1, .filtres2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .boutonsfiltres {
+        padding: 15px 18px;
+        margin-right: 20px;
+    }
+    .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+        font-size: 18px;
+        padding-right: 12px;
+    }
+    /* CARDS HEBERGEMENTS Tablette*/
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+    .boxgrises {
+        padding-top: 20px;
+        min-height: 278px; 
+        margin-bottom: 40px;
+    }
+    .marseille {
+        width: 100%;
+    }
+    .popu {
+        width: 100%;
+    }
+    .txtPopu h3 {
+        font-size: 15px;
+    }
+    .Plus {
+        padding: 30px 0 40px 0;
+    }
+    .Plus a {
+        padding-left: 20px;
+    }
+    .lesCardspopu {
+        display: flex;
+        flex-direction: row;
+    }
+    .cardpopu article {
+        width: 252px;
+        height: 144px;
+    }
+    .cardpopu img {
+        height: 100%;
+        width: 35%; 
+    }
+    .txtPopu {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        padding: 11px 0 11px 10px;
+    }
+    .fa-chart-line {
+        padding-right: 20px;
+    }
+    /* ACTIVITES Tablette*/
+    .activites {
+        margin: 20px auto;
+    }
+    .boxActiv {
+        margin: 40px 0 60px 0;
+    }
+    .activ {
+        height: 267px;
+        width: 21%;
+    }
+    .activ article {
+        padding-bottom: 15px;
+    }
+    .activ img {
+        height: 211px; 
+    }
+    .activ h3 {
+        padding-left: 15px; 
+        font-size: 13px;     
+    }
+    /* FOOTER Tablette */
+    .footer {
+        min-height: 225px;
+    }
+    .footer article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 30px 0 40px 70px;
+        margin: 0;
+    }
+}
+/* ----Mobile---- */
+@media screen and (max-width:768px) {
+    main, footer {
+        width: 88.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: 170px;
+        width: 100%;
+    }
+    .logo {
+        margin-top: 40px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 100%;
+    }
+    .navig {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+    .navig li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 50%;
+        width: 50%;
+        border-top: none;
+        margin-right: 0;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .navig li:hover {
+        border-top: none;
+    }
+    .navig li:hover {
+        border-bottom: 3px solid Blue;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Ligne recherche mobile */
+    .formulaire {
+        justify-content: center;
+        margin: 36px 0 34px 0;
+        height: 49px;
+    } 
+    .lignerecherche {
+        padding-left: 10px;
+        width: 221px;
+    }  
+    .bouton {
+        display: none;
+    }
+    .bouton-xs {
+        visibility: visible;
+    }
+    /* ligne filtres mobile */
+    .lignefiltres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 34px 0 0 0;
+        min-height: 200px;
+        width: 100%;
+    }
+    .filtres {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .filtres1, .filtres2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 17px;
+    }
+    .boutonsfiltres {
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 0px;
+        margin-right: 0;
+        width: 47%;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+        font-size: 15px;
+        padding-right: 3px;
+        padding-left: 0;
+    }
+    .info {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    /* Cards mobiles */
+    .hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .hebergements h2 {
+        padding-left: 25px;
+    }
+    .boxgrises {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        padding-top: 5px;
+        padding-bottom: 47px;
+        width: 120%;
+    }
+    .marseille {
+        background-color: white;
+    }
+    .lignes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .cardmarseille {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.279);
+        width: 89%;
+        margin-bottom: 20px;
+    }     
+    .Plus {
+        display: none;
+    }
+    .lesCardspopu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .lesCardspopu .cardpopu {
+        height: 24%;
+    }    
+    .cardpopu article {
+        width: 88.5%;
+        margin-bottom: 20px;
+    }   
+    .cardpopu img {
+        height: 144px;
+        width: 42%; 
+    }
+    .txtPopu {
+        width: 50%;    
+    }
+    /* activités mobiles */
+    .activites {
+        margin-top: 0;
+    }
+    .activites h2 {
+        margin-left: 0;
+        margin-bottom: 4px;
+        padding-right: 114px;
+    }
+    .boxActiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .activ {
+        height: 190px;
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+    .activ img {
+        height: 134px;
+    }
+    /* footer mobiles */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .footer article {
+        margin: 10px 0 0 20px;
+    }    
+}
+
+
