@@ -8,15 +8,9 @@
 
 #main-wrapper {
     font-family: 'Raleway', sans-serif; 
-    max-width: 1440px;
+    max-width: 1400px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-}
-
-header, main, footer {
-    width: 95%;
+    padding: 0px 30px;
 }
 
 img {
@@ -412,10 +406,7 @@ nav {
     font-weight: 400;
 }
 /* RESPONSIVE DESIGN Tablette */
-@media screen and (min-width:767px) and (max-width:992px) {
-    header, main, footer {
-        width: 85%;
-    }   
+@media screen and (max-width:992px) {
     /* FILTRES Tablette */    
     .lignefiltres h3 {
         margin-right: 22px;
@@ -513,8 +504,10 @@ nav {
 }
 /* ----Mobile---- */
 @media screen and (max-width:768px) {
+    #main-wrapper {
+        padding: 0px;
+    }
     main, footer {
-        width: 88.5%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -561,6 +554,9 @@ nav {
     .intro {
         display: flex;
         flex-direction: column;
+    }
+    .intro, .lignefiltres, .info, #act {
+        padding: 0px 15px;
     }
     /* Ligne recherche mobile */
     .formulaire {
@@ -633,7 +629,6 @@ nav {
         border-radius: 0;
         padding-top: 5px;
         padding-bottom: 47px;
-        width: 120%;
     }
     .marseille {
         background-color: white;
